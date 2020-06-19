@@ -1,16 +1,13 @@
 $(document).ready(function () {
 
 
-
-    const rand = Math.floor(Math.random() * 1500) + 1000
-
     function cringe() {
         $('#preloader').fadeOut('slow', function() {
             $(this).remove();
         })
     }
 
-    setTimeout(cringe, rand)
+    setTimeout(cringe, 1500)
 
     // toggle mobile menu
     $('[data-toggle="toggle-nav"]').on('click', function () {
