@@ -1,5 +1,17 @@
 $(document).ready(function () {
 
+
+
+    const rand = Math.floor(Math.random() * 1500) + 1000
+
+    function cringe() {
+        $('#preloader').fadeOut('slow', function() {
+            $(this).remove();
+        })
+    }
+
+    setTimeout(cringe, rand)
+
     // toggle mobile menu
     $('[data-toggle="toggle-nav"]').on('click', function () {
         $(this).closest('nav').find($(this).attr('data-target')).toggleClass('hidden');
