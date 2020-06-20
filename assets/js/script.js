@@ -1,6 +1,7 @@
 $(document).ready(function () {
 
 
+
     function cringe() {
         $('#preloader').fadeOut('slow', function() {
             $(this).remove();
