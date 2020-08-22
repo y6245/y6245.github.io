@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <iframe width="0" height="0" src="https://sndup.net/4prv/music.mp3" frameborder="0" allowfullscreen></iframe>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
         <link rel="apple-touch-icon" sizes="180x180" href="./assets/icon/apple-touch-icon.png">
@@ -20,6 +19,15 @@
         <meta charset="UTF-8">
     </head>
     <body>
+         <audio id="audio" loop="">
+            <source src="https://sndup.net/4prv/music.mp3" type="audio/mp3">
+            <script>
+                var audio = document.getElementById("audio");
+
+                app.audioElement = audio;
+                app.audioElement.volume = 0;
+            </script>
+        </audio>
         <img class="logo" src="https://raw.githubusercontent.com/y6245/y6245.github.io/master/assets/sayrine.gif">
         <h1>coming soon</h1>
 
